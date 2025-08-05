@@ -1,0 +1,145 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+% Other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+% Tabularx environment
+\usepackage{tabularx}
+
+% Lists within experience section
+\usepackage{enumitem}
+
+% Centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+% Prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+% Custom \section
+\usepackage{titlesec} 
+\usepackage{multicol}
+\usepackage{multirow}
+
+% CV Sections formatting
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{10pt}{10pt} 
+
+% For publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+% Hyperref setup
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+% Social icons
+\usepackage{fontawesome5}
+
+% Underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  
+
+\begin{document}
+
+% Non-numbered pages
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{XXXXXX XXXXXX} \\[8pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} XXXXXXXXXX@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} XXXXXXXXXX}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} github.com/XXXXXXXXXX}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/XXXXXXXXXX}}}
+\end{tabularx}
+
+\vspace{10pt}
+
+\section{Objective}
+Junior java developer with 3 years of experience in backend development using Java, Spring Boot, Hibernate, and SQL. Skilled in building scalable RESTful APIs and enterprise applications. Passionate about writing clean, maintainable code and continuously learning modern backend and cloud-native technologies.
+
+\vspace{10pt}
+
+\section{Technical Skills}
+\color[HTML]{1C033C}\textbf{Programming \& Web Technologies:} Java 8+, J2EE, C, SQL, HTML, CSS, XML, JSP, RESTful APIs\\[5pt]
+\color[HTML]{1C033C}\textbf{Frameworks \& Tools:} Spring Boot, Hibernate, JUnit 5, Git, Maven, Docker, IntelliJ IDEA, Eclipse, Log4j\\[5pt]
+\color[HTML]{1C033C}\textbf{Databases \& Cloud Technologies:} MySQL, AWS (EC2, S3, SQS, Lambda, DynamoDB)\\[5pt]
+\color[HTML]{1C033C}\textbf{Development Practices:} Agile Methodology\\[5pt]
+
+\vspace{5pt}
+
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{XXXXXXXXXX, XXXX} \hfill \color[HTML]{371e77} Sept XXXX -- Present \\[5pt]
+\color[HTML]{371e77}\textbf{\textit{Junior Java Developer}}\ \hfill \color[HTML]{4B28A4} \\[6pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+    \item Designed and developed RESTful APIs using Spring Boot, integrating business logic with backend systems.
+    \item Worked with Hibernate for ORM and managed relational data models using MySQL.
+    \item Utilized Java 8+ features to write efficient, maintainable, and modular code in a multi-tier application architecture.
+    \item Implemented logging and unit testing using Log4j and JUnit to ensure code quality and application stability.
+    \item Developed UI elements with JSP-based web pages.
+    \item Packaged and deployed applications using Maven as WAR/JAR files across development and testing environments.
+    \item Participated in Agile development cycles including sprint planning, code reviews, and continuous integration practices.
+    \item Used Eclipse and IntelliJ IDEA as primary IDEs for backend development and debugging.
+    \item Supported deployment and basic monitoring tasks in AWS cloud environments (EC2, S3).
+    \item Authored detailed technical documentation for feature implementations and integration guides.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+\vspace{10pt}
+
+\section{Personal Projects}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+    \item \textbf{E-Commerce Web Application (2024):} Developed a full-stack e-commerce platform with product management and user authentication. Implemented the backend using Java and Servlets for request handling and business logic. Used JSP for dynamic web page rendering and seamless frontend-backend interaction. Managed data persistence using MySQL and Hibernate ORM. Used Maven for dependency management and Git for version control. \textit{(Java, Servlets, JSP, MySQL, Hibernate, Bootstrap, Git)}
+    \item \textbf{GraphQL API with Spring Boot and MySQL (2024):} Built a GraphQL API to optimize data fetching, reducing multiple REST calls. Designed complex GraphQL queries and mutations for flexible data retrieval. Improved database efficiency using Hibernate and optimized SQL transactions. Configured application and API management using Spring Boot. \textit{(Java, Spring Boot,REST API, GraphQL, MySQL)}
+    \item \textbf{ToDo Application with Spring Boot (2025):} Developed a full-stack ToDo application to enhance hands-on understanding of Spring Boot. Designed the backend using Java, Spring boot and Data JPA for CRUD operations and used MySQL for data persistence. Rendered dynamic frontend pages using Thymeleaf, integrating them with the backend. \textit{(Java, Spring Boot, Spring Data JPA, Thymeleaf, MySQL)}
+
+\end{itemize}
+
+\vspace{10pt}
+
+\section{Awards and Certificates}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+        \item \textbf{AWS Cloud Practitioner Certification} – Amazon Web Services (AWS)
+        \item \textbf{Employee of the Quarter (2024)} – Recognized for outstanding contributions and performance at XXXXXXXXXX.
+        \item \textbf{Java Certification} – XXXXXXXXXX Academy (Private Training Institute)
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\vspace{10pt}
+
+\section{Personal Achievements}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+        \item {\textbf{Research \& Publications:}} Published research paper titled \textit{“Player Performance Prediction in Cricket using Machine Learning Classifiers”} in the International Journal of Progressive Research in Engineering Management and Science (IJPREMS), 2025. Applied ML algorithms including Random Forest, SVM, Naïve Bayes, and KNN for predictive analysis using real-world datasets.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\vspace{10pt}
+
+\section{Education}
+\textbf{XXX XXXXXX College XXXX}\hfill \\
+Msc. XXXXXXXXXXXXXXXX $|$ \textbf{CGPA: X.X/X}
+
+\end{document}
